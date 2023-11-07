@@ -149,7 +149,7 @@ h4 {
 .about {
   width: 100%;
   padding: 100px 0px;
-  background-color: #191919;
+  background-color: black;
 }
 
 .about img {
@@ -273,7 +273,7 @@ button:hover {
 .contact-me {
   width: 100%;
   height: 290px;
-  background: #191919;
+  background: black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -284,7 +284,7 @@ button:hover {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 25px;
-  background-color: #191919;
+  background-color: black;
 }
 .contact-me .button-two {
   background-color: #f9004d;
@@ -305,7 +305,7 @@ footer {
   position: relative;
   width: 100%;
   height: 400px;
-  background: #101010;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,11 +324,11 @@ footer p:nth-child(2) {
   width: 500px;
   text-align: center;
   line-height: 26px;
-  background-color: #101010;
+  background-color: black;
 }
 .social {
   display: flex;
-  background-color: #101010;
+  background-color: black;
 }
 
 .social a {
