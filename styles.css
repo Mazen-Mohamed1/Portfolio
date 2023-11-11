@@ -129,10 +129,18 @@ h4 {
 }
 
 @media (min-width: 788px) and (max-width: 1023px) {
-  .hero {
+    .hero {
     height: 100vh;
     width: 100%;
-    background-image: none;
+    background-image: url("Gold and Black Modern Linkedin Photo Profile.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
   }
 }
 
