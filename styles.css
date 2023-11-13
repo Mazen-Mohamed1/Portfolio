@@ -83,14 +83,10 @@ nav ul li a:hover {
 }
 h1 {
   color: white;
-  margin: 20px 0px 20px;
+  margin: 20px 0px -5px;
   font-size: 75px;
 }
-h3 {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
+
 h4 {
   color: #fcfc;
   letter-spacing: 2px;
@@ -131,10 +127,13 @@ h4 {
     display: inline-block;
     padding: 10px 20px;
   }
+  .wrapper {
+    min-height: 3vh;
+  }
 }
 
 @media (min-width: 788px) and (max-width: 1023px) {
-    .hero {
+  .hero {
     height: 100vh;
     width: 100%;
     background-image: url("Gold and Black Modern Linkedin Photo Profile.png");
@@ -146,6 +145,9 @@ h4 {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
+  }
+  .wrapper {
+    min-height: 3vh;
   }
 }
 
@@ -367,4 +369,60 @@ footer p:nth-child(2) {
   bottom: 35px;
   font-size: 14px;
   background-color: #101010;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6vh;
+  display: inline-flex;
+}
+
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 20px;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 10px;
+  height: 22px;
+  line-height: 28px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  font-size: 20px;
+  color: #f9004d;
+  position: relative;
+  top: 0; /* Adjusted initial position */
+  animation: slide 4s steps(2) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -53px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid #f9004d;
+  animation: typing 1.5s steps(18) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -20px 0 20px; /* Adjusted margin to match the text position */
+  }
 }
