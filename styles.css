@@ -380,7 +380,7 @@ footer p:nth-child(2) {
 
 .wrapper .static-txt {
   color: #fff;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .wrapper .dynamic-txts {
@@ -392,7 +392,7 @@ footer p:nth-child(2) {
 
 .dynamic-txts li {
   list-style: none;
-  font-size: 20px;
+  font-size: 30px;
   color: #f9004d;
   position: relative;
   top: 0; /* Adjusted initial position */
